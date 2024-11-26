@@ -1,0 +1,33 @@
+Data Variable,Units
+Appliances energy consumption,Wh
+Light energy consumption,Wh
+"T1, Temperature in kitchen area",°C
+"RH1, Humidity in kitchen area",%
+"T2, Temperature in living room area",°C
+"RH2, Humidity in living room area",%
+"T3, Temperature in laundry room area",°C
+"RH3, Humidity in laundry room area",%
+"T4, Temperature in office room",°C
+"RH4, Humidity in office room",%
+"T5, Temperature in bathroom",°C
+"RH5, Humidity in bathroom",%
+"T6, Temperature outside the building (north side)",°C
+"RH6, Humidity outside the building (north side)",%
+"T7, Temperature in ironing room",°C
+"RH7, Humidity in ironing room",%
+"T8, Temperature in teenager room 2",°C
+"RH8, Humidity in teenager room 2",%
+"T9, Temperature in parents room",°C
+"RH9, Humidity in parents room",%
+"To, Temperature outside (from Chièvres weather station)",°C
+Pressure (from Chièvres weather station),mm Hg
+"RHo, Humidity outside (from Chièvres weather station)",%
+Windspeed (from Chièvres weather station),m/s
+Visibility (from Chièvres weather station),km
+Tdewpoint (from Chièvres weather station),°C
+Random Variable 1 (RV_1),Non dimensional
+Random Variable 2 (RV_2),Non dimensional
+Number of seconds from midnight (NSM),s
+Week status (weekend (0) or a weekday (1)),Factor/categorical
+"Day of week (Monday, Tuesday… Sunday)",Factor/categorical
+Date time stamp,year-month-day hour:min:s
