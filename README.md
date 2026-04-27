@@ -32,10 +32,21 @@ Providing real-time feedback on household energy use can reduce consumption by *
   Identify key drivers of energy consumption  
 
 ---
-- ## 📊 The Dataset
+## 📊 The Dataset
 
-- **Dataset Source**: Published research paper [1]
-- The dataset contains **time-series measurements** of energy consumption and environmental conditions collected from a low-energy smart home.
+**Dataset Source**: Published research paper [1]
+The dataset contains **time-series measurements** of energy consumption and environmental conditions collected from a low-energy smart home.
+
+---
+### ⏱️ Data Collection Overview
+
+- Data was collected over **~4.5 months** at **10-minute intervals**  
+- Indoor conditions were monitored using a **wireless sensor network**
+  - Sensors recorded temperature and humidity every **~3.3 minutes**
+  - Values were then **averaged over 10-minute periods**
+- Energy consumption data was logged every **10 minutes** using **m-bus energy meters**
+- **Weather data** was obtained from the **Chievres weather station** and merged using the timestamp (`date`)
+- Two **random variables (`rv1`, `rv2`)** were included to test the models
 
 ---
 
@@ -55,16 +66,20 @@ Temperature (`T`) and Relative Humidity (`RH`) readings were collected from diff
 
 | Feature | Description |
 |--------|-------------|
-| `T1`, `RH_1` | Temperature & humidity in **Room 1** |
-| `T2`, `RH_2` | Temperature & humidity in **Room 2** |
-| `T3`, `RH_3` | Temperature & humidity in **Room 3** |
-| `T4`, `RH_4` | Temperature & humidity in **Room 4** |
-| `T5`, `RH_5` | Temperature & humidity in **Room 5** |
-| `T6`, `RH_6` | Temperature & humidity in **Room 6** |
-| `T7`, `RH_7` | Temperature & humidity in **Room 7** |
-| `T8`, `RH_8` | Temperature & humidity in **Room 8** |
-| `T9`, `RH_9` | Temperature & humidity in **Room 9** |
+| `T1`, `RH_1` | Temperature & humidity in **Kitchen area** |
+| `T2`, `RH_2` | Temperature & humidity in **Living room area** |
+| `T3`, `RH_3` | Temperature & humidity in **Laundry room area** |
+| `T4`, `RH_4` | Temperature & humidity in **Office room** |
+| `T5`, `RH_5` | Temperature & humidity in **Bathroom** |
+| `T6`, `RH_6` | Temperature & humidity outside **the building (north side)** |
+| `T7`, `RH_7` | Temperature & humidity in **Ironing room** |
+| `T8`, `RH_8` | Temperature & humidity in **Teenager room 2** |
+| `T9`, `RH_9` | Temperature & humidity in **Parents room** |
 
+
+👉 In general:
+- `T#` = Temperature (°C) in a specific room  
+- `RH_#` = Relative Humidity (%) in the same room  
 
 ---
 
@@ -72,12 +87,12 @@ Temperature (`T`) and Relative Humidity (`RH`) readings were collected from diff
 
 | Feature | Description |
 |--------|-------------|
-| `T_out` | Outdoor temperature (°C) |
-| `RH_out` | Outdoor humidity (%) |
-| `Press_mm_hg` | Atmospheric pressure (mm Hg) |
-| `Windspeed` | Wind speed (m/s) |
-| `Visibility` | Visibility (km) |
-| `Tdewpoint` | Dew point temperature (°C) |
+| `T_out` | Outdoor temperature from Chievres weather station (°C) |
+| `RH_out` | Outdoor humidity from Chievres weather station (%) |
+| `Press_mm_hg` | Atmospheric pressure from Chievres weather station (mm Hg) |
+| `Windspeed` | Wind speed from Chievres weather station (m/s) |
+| `Visibility` | Visibility from Chievres weather station (km) |
+| `Tdewpoint` | Dew point temperature from Chievres weather station (°C) |
 
 ---
 
@@ -85,7 +100,7 @@ Temperature (`T`) and Relative Humidity (`RH`) readings were collected from diff
 
 | Feature | Description |
 |--------|-------------|
-| `rv1`, `rv2` | Random variables (included for benchmarking and testing model robustness) |
+| `rv1`, `rv2` | Nondimensional Random variables (included for benchmarking and testing model robustness) |
 
 ---
 
@@ -99,21 +114,6 @@ Below is the layout of sensors on **Floor 2** (adapted from the original paper):
 
 ![Location of Sensors Floor 2](floor2_layout.png)
 
-
----
-
-### 💡 Key Notes
-
-- The dataset is **multivariate and time-dependent**, making it suitable for:
-  - Time-series analysis  
-  - Regression modeling  
-  - Feature importance studies  
-
-- Indoor environmental conditions (temperature & humidity) are expected to influence **energy consumption patterns**, particularly heating, cooling, and appliance usage.
-
----
-- Here are the the images from where the different sensors were located. These images were picked from the published papers.
-- ![Location of Sensors Floor 1](floor1_layout.png)
 
 --- 
 ## 🛠️ Methodology
