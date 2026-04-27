@@ -36,7 +36,7 @@ Providing real-time feedback on household energy use can reduce consumption by *
 ## 🛠️ Methodology
 
 ### 🔍 1. Exploratory Data Analysis (EDA)
-- **Dataset Source**: Published research paper [[1]](#references)  
+- **Dataset Source**: Published research paper [1] 
 - **Analysis Types**:
   - **Univariate**:  
     `Appliances`, `lights`, `T1`, `RH_1`, `Press_mm_hg`, `date`
