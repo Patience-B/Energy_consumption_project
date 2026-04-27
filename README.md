@@ -9,7 +9,7 @@ This project helps homeowners **monitor energy consumption trends** and **predic
 
 it delivers actionable insights to help reduce energy costs and environmental impact.
 
-
+---
 
 ## ❗ Problem Statement
 Providing real-time feedback on household energy use can reduce consumption by **5–15%** [[2]](#references). However, **tracking trends over time** unlocks even greater value:
@@ -19,7 +19,7 @@ Providing real-time feedback on household energy use can reduce consumption by *
 - Forecasting future energy costs  
 - Setting and tracking energy-saving goals  
 
-
+---
 
 ## 🎯 Objectives
 - 📊 **Monitor Energy Trends**  
@@ -31,7 +31,7 @@ Providing real-time feedback on household energy use can reduce consumption by *
 - 💡 **Enable Optimization**  
   Identify key drivers of energy consumption  
 
-
+---
 
 ## 🛠️ Methodology
 
@@ -45,7 +45,7 @@ Providing real-time feedback on household energy use can reduce consumption by *
     - 🌡️ Temperature (`T1`)  
     - 💧 Humidity (`RH_1`)  
 
-
+---
 
 ### 📈 2. Energy Consumption Trend Analysis
 - Created a time-based dataset using:
@@ -57,7 +57,7 @@ Providing real-time feedback on household energy use can reduce consumption by *
 - 🗓️ Monthly Consumption  
 - 📊 Interactive Time Series (for anomaly detection)
 
-
+---
 
 ### 🤖 3. Regression Modeling
 
@@ -78,7 +78,7 @@ Providing real-time feedback on household energy use can reduce consumption by *
 - RMSE (Root Mean Squared Error)  
 - R² Score  
 
-
+---
 
 ## 📊 Results
 
@@ -90,7 +90,7 @@ Providing real-time feedback on household energy use can reduce consumption by *
 - Notable relationships with:
   - `T2` and `T6` (temperature features)
 
-
+---
 
 ### 🤖 Model Performance
 | Model | Description | Performance |
@@ -106,14 +106,14 @@ Providing real-time feedback on household energy use can reduce consumption by *
 - **Key Insight**:  
   Temperature features significantly influence energy consumption.
 
-
+---
 
 ### 📈 Trend Insights
 - 🌙 **Evening Peaks** → Highest energy usage  
 - 📆 **Mid-Month Increase** → Noticeable spikes  
 - 📉 **Monthly Decline** → Lowest consumption in May  
 
-
+---
 
 ## 💭 Discussion & Reflection
 Tracking energy consumption trends enables homeowners to:
@@ -124,7 +124,7 @@ Tracking energy consumption trends enables homeowners to:
 
 This project demonstrates how combining **EDA**, **trend analysis**, and **machine learning** can transform raw data into meaningful, actionable insights.
 
-
+---
 
 ## 📚 References
 1. Luis C, Véronique F, Dominique D,  
@@ -141,6 +141,7 @@ This project demonstrates how combining **EDA**, **trend analysis**, and **machi
 - Explore advanced models (e.g., Random Forest, XGBoost)  
 - Add personalized energy-saving recommendations  
 
+---
 
 ## 👩‍💻 Author
 Developed as part of a data-driven exploration into **energy efficiency and sustainability**.
