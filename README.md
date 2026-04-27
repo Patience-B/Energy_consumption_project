@@ -12,7 +12,7 @@ it delivers actionable insights to help reduce energy costs and environmental im
 ---
 
 ## ❗ Problem Statement
-Providing real-time feedback on household energy use can reduce consumption by **5–15%** [[2]](#references). However, **tracking trends over time** unlocks even greater value:
+Providing real-time feedback on household energy use can reduce consumption by **5–15%** [2]. However, **tracking trends over time** unlocks even greater value:
 
 - Detecting behavioral and seasonal changes  
 - Identifying the impact of new appliances  
