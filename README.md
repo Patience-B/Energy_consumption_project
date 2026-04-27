@@ -32,8 +32,86 @@ Providing real-time feedback on household energy use can reduce consumption by *
   Identify key drivers of energy consumption  
 
 ---
-## The Dataset
+- ## 📊 The Dataset
+
 - **Dataset Source**: Published research paper [1]
+- The dataset contains **time-series measurements** of energy consumption and environmental conditions collected from a low-energy smart home.
+
+---
+
+### 🧾 Feature Description
+
+The dataset includes the following key variables:
+
+- **`date`** → Timestamp of the observation  
+- **`Appliances`** → Energy consumption of appliances (Wh) ⚡ *(target variable)*  
+- **`lights`** → Energy consumption from lighting (Wh) 💡  
+
+---
+
+### 🌡️ Temperature & Humidity Sensors
+
+Temperature (`T`) and Relative Humidity (`RH`) readings were collected from different locations within the house:
+
+| Feature | Description |
+|--------|-------------|
+| `T1`, `RH_1` | Temperature & humidity in **Room 1** |
+| `T2`, `RH_2` | Temperature & humidity in **Room 2** |
+| `T3`, `RH_3` | Temperature & humidity in **Room 3** |
+| `T4`, `RH_4` | Temperature & humidity in **Room 4** |
+| `T5`, `RH_5` | Temperature & humidity in **Room 5** |
+| `T6`, `RH_6` | Temperature & humidity in **Room 6** |
+| `T7`, `RH_7` | Temperature & humidity in **Room 7** |
+| `T8`, `RH_8` | Temperature & humidity in **Room 8** |
+| `T9`, `RH_9` | Temperature & humidity in **Room 9** |
+
+
+---
+
+### 🌍 Outdoor & Environmental Features
+
+| Feature | Description |
+|--------|-------------|
+| `T_out` | Outdoor temperature (°C) |
+| `RH_out` | Outdoor humidity (%) |
+| `Press_mm_hg` | Atmospheric pressure (mm Hg) |
+| `Windspeed` | Wind speed (m/s) |
+| `Visibility` | Visibility (km) |
+| `Tdewpoint` | Dew point temperature (°C) |
+
+---
+
+### 🔁 Random Variables
+
+| Feature | Description |
+|--------|-------------|
+| `rv1`, `rv2` | Random variables (included for benchmarking and testing model robustness) |
+
+---
+
+### 🏠 Sensor Placement
+
+Below is the layout of sensors on **Floor 1** (adapted from the original paper):
+
+![Location of Sensors Floor 1](floor1_layout.png)
+
+Below is the layout of sensors on **Floor 2** (adapted from the original paper):
+
+![Location of Sensors Floor 2](floor2_layout.png)
+
+
+---
+
+### 💡 Key Notes
+
+- The dataset is **multivariate and time-dependent**, making it suitable for:
+  - Time-series analysis  
+  - Regression modeling  
+  - Feature importance studies  
+
+- Indoor environmental conditions (temperature & humidity) are expected to influence **energy consumption patterns**, particularly heating, cooling, and appliance usage.
+
+---
 - Here are the the images from where the different sensors were located. These images were picked from the published papers.
 - ![Location of Sensors Floor 1](floor1_layout.png)
 
