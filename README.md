@@ -32,11 +32,16 @@ Providing real-time feedback on household energy use can reduce consumption by *
   Identify key drivers of energy consumption  
 
 ---
+## The Dataset
+- **Dataset Source**: Published research paper [1]
+- Here are the the images from where the different sensors were located. These images were picked from the published papers.
+- ![Energy Trends](images/energy_trend.png)
 
+--- 
 ## 🛠️ Methodology
 
 ### 🔍 1. Exploratory Data Analysis (EDA)
-- **Dataset Source**: Published research paper [1] 
+
 - **Analysis Types**:
   - **Univariate**:  
     `Appliances`, `lights`, `T1`, `RH_1`, `Press_mm_hg`, `date`
