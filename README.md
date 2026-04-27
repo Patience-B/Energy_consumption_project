@@ -35,7 +35,7 @@ Providing real-time feedback on household energy use can reduce consumption by *
 ## The Dataset
 - **Dataset Source**: Published research paper [1]
 - Here are the the images from where the different sensors were located. These images were picked from the published papers.
-- ![Energy Trends](images/energy_trend.png)
+- ![Location of Sensors Floor 1](floor1_layout.png)
 
 --- 
 ## 🛠️ Methodology
