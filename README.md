@@ -34,8 +34,7 @@ Providing real-time feedback on household energy use can reduce consumption by *
 ---
 ## 📊 The Dataset
 
-**Dataset Source**: Published research paper [1]
-The dataset contains **time-series measurements** of energy consumption and environmental conditions collected from a low-energy smart home.
+The dataset contains **time-series measurements** of energy consumption and environmental conditions collected from a low-energy smart home. **Dataset Source**: Published research paper [1]
 
 ---
 ### ⏱️ Data Collection Overview
