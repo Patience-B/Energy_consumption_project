@@ -37,7 +37,7 @@ Providing real-time feedback on household energy use can reduce consumption by *
 The dataset contains **time-series measurements** of energy consumption and environmental conditions collected from a low-energy smart home. **Dataset Source**: Published research paper [1]
 
 ---
-### ⏱️ Data Collection Overview
+#### ⏱️ Data Collection Overview
 
 - Data was collected over **~4.5 months** at **10-minute intervals**  
 - Indoor conditions were monitored using a **wireless sensor network**
@@ -49,7 +49,7 @@ The dataset contains **time-series measurements** of energy consumption and envi
 
 ---
 
-### 🧾 Feature Description
+#### 🧾 Feature Description
 
 The dataset includes the following key variables:
 
@@ -59,7 +59,7 @@ The dataset includes the following key variables:
 
 ---
 
-### 🌡️ Temperature & Humidity Sensors
+#### 🌡️ Temperature & Humidity Sensors
 
 Temperature (`T`) and Relative Humidity (`RH`) readings were collected from different locations within the house:
 
@@ -82,7 +82,7 @@ Temperature (`T`) and Relative Humidity (`RH`) readings were collected from diff
 
 ---
 
-### 🌍 Outdoor & Environmental Features
+#### 🌍 Outdoor & Environmental Features
 
 | Feature | Description |
 |--------|-------------|
@@ -95,7 +95,7 @@ Temperature (`T`) and Relative Humidity (`RH`) readings were collected from diff
 
 ---
 
-### 🔁 Random Variables
+#### 🔁 Random Variables
 
 | Feature | Description |
 |--------|-------------|
@@ -103,7 +103,7 @@ Temperature (`T`) and Relative Humidity (`RH`) readings were collected from diff
 
 ---
 
-### 🏠 Sensor Placement
+#### 🏠 Sensor Placement
 
 Below is the layout of sensors on **Floor 1** (adapted from the original paper):
 
@@ -117,7 +117,7 @@ Below is the layout of sensors on **Floor 2** (adapted from the original paper):
 --- 
 ## 🛠️ Methodology
 
-### 🔍 1. Exploratory Data Analysis (EDA)
+#### 🔍 1. Exploratory Data Analysis (EDA)
 
 - **Analysis Types**:
   - **Univariate**:  
@@ -129,11 +129,11 @@ Below is the layout of sensors on **Floor 2** (adapted from the original paper):
 
 ---
 
-### 📈 2. Energy Consumption Trend Analysis
+#### 📈 2. Energy Consumption Trend Analysis
 - Created a time-based dataset using:
   - `hour`, `day`, `week`, `month`
 
-#### Key Visualizations:
+##### Key Visualizations:
 - ⏰ Hourly Trends  
 - 📅 Daily & Weekly Patterns  
 - 🗓️ Monthly Consumption  
@@ -141,12 +141,12 @@ Below is the layout of sensors on **Floor 2** (adapted from the original paper):
 
 ---
 
-### 🤖 3. Regression Modeling
+#### 🤖 3. Regression Modeling
 
 #### 🔧 Data Preprocessing
 - Normalization using **MinMaxScaler**
 
-#### 🧠 Models Built
+##### 🧠 Models Built
 1. **Model 1 (Baseline)**  
    - All features except `Appliances`, `lights`, `date`
 
@@ -156,7 +156,7 @@ Below is the layout of sensors on **Floor 2** (adapted from the original paper):
 3. **Model 3 (Feature Selection)**  
    - `SelectKBest` algorithm
 
-#### 📏 Evaluation Metrics
+##### 📏 Evaluation Metrics
 - RMSE (Root Mean Squared Error)  
 - R² Score  
 
@@ -164,7 +164,7 @@ Below is the layout of sensors on **Floor 2** (adapted from the original paper):
 
 ## 📊 Results
 
-### 🔍 EDA Insights
+#### 🔍 EDA Insights
 - Strongest correlation: `Appliances` ↔ `lights`  
 - Weak correlations with:
   - Temperature (`T1`)  
@@ -174,7 +174,7 @@ Below is the layout of sensors on **Floor 2** (adapted from the original paper):
 
 ---
 
-### 🤖 Model Performance
+#### 🤖 Model Performance
 | Model | Description | Performance |
 |------|------------|------------|
 | Model 1 | Baseline Linear Regression | ✅ Best |
@@ -190,7 +190,7 @@ Below is the layout of sensors on **Floor 2** (adapted from the original paper):
 
 ---
 
-### 📈 Trend Insights
+#### 📈 Trend Insights
 - 🌙 **Evening Peaks** → Highest energy usage  
 - 📆 **Mid-Month Increase** → Noticeable spikes  
 - 📉 **Monthly Decline** → Lowest consumption in May  
